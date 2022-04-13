@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Tricentis-Frontend-Challenge
+Tricentis Frontend Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Technology Used
+ - React
+ - Redux
+ - Yailwind
+ - SCSS
+ - Axios
+ - Jest
+ - Cypress
 
-## Available Scripts
+### Problem Statement
+Write an SPA that contains a search field, and a list of five elements underneath. It should look roughly like this:
 
-In the project directory, you can run:
 
-### `npm start`
+Per default the list should show A, B, C, D, E.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Every second the elements should rotate by one position:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+List after 1 second	after 2 seconds	after 3 seconds
+B	C	D
+C	D	E
+D	E	A
+E	A	B
+A	B	C
+ 
 
-### `npm test`
+When the user types into the search field, query the apple music API like
+this: https://itunes.apple.com/search?term=radiohead. The output contains a list with songs. Each song has a property "collectionName" (the album). Sort all albums alphabetically and take the first five. E.g. “A Moon Shaped Pool“, „In Rainbows“, “Kid A”, “OK Computer”, “Pablo Honey”.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The list should keep rotating with a 1 second interval and the new albums should be added from bottom to top:
 
-### `npm run build`
+1 sec	2 sec	User types “radiohead”	3 sec	4 sec
+A	B		C	D
+B	C		D	E
+C	D		E	A
+D	E		A	A Moon Shaped Pool
+E	A		A Moon Shaped Pool	In Rainbows
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Items from previous searches should not appear again, but only the current search term items should be rotated.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
