@@ -4,7 +4,7 @@ Tricentis Frontend Challenge
 ### Technology Used
  - React
  - Redux
- - Yailwind
+ - Tailwind
  - SCSS
  - Axios
  - Jest
