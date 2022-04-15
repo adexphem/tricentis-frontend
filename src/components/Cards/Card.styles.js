@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 400px;
+  min-width: 300px;
   margin: 10px auto;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #dddbdb;
 `;
 
 export const Box = styled.div`
@@ -11,4 +15,7 @@ export const Box = styled.div`
   color: palevioletred;
   padding: 10px 15px;
   border: 1px solid grey;
+  margin: 10px 0;
+  border-radius: 3px;
+  background-color: white;
 `;
