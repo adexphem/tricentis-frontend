@@ -37,9 +37,3 @@ E	A		A Moon Shaped Pool	In Rainbows
 
 Items from previous searches should not appear again, but only the current search term items should be rotated.
 
-
-### Project Setup
-1. `git clone https://github.com/adexphem/tricentis-frontend`
-2. `cd frontend-web-app`
-3. `npm install`
-4. `npm run start`
