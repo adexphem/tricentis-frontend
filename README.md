@@ -1,14 +1,11 @@
 # Tricentis-Frontend-Challenge
-Tricentis Frontend Challenge
+Tricentis Frontend Role
 
 ### Technology Used
  - React
  - Redux
- - Tailwind
- - SCSS
+ - styled-components
  - Axios
- - Jest
- - Cypress
 
 ### Problem Statement
 Write an SPA that contains a search field, and a list of five elements underneath. It should look roughly like this:

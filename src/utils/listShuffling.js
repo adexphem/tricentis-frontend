@@ -3,7 +3,7 @@ export const listShuffling = (initialArray, albums) => {
   
     if (albums.length) {
       initialArray.shift();
-      firstElement = albumsArray.shift();
+      firstElement = albums.shift();
     } else {
         firstElement = initialArray.shift();
     }

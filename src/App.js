@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Card from './components/Cards'
 
 function App() {
   return (
     <div className="App">
-      <div>Header</div>
-      <div>body</div>
+      <Card />
       <div>footer</div>
     </div>
   );
